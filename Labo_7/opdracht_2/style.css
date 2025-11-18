@@ -21,15 +21,17 @@ tbody td {
     color: #80141C;
 }
 
-tbody tr.alt td {
-    background: #F7CDCD;
-}
+
 
 tbody td:first-child{
     border-left: none;
 }
 
-td.onbekend {
+tbody tr.alt td {
+    background: #F7CDCD;
+}
+
+tbody tr.alt td.onbekend {
     background-color: red;
     color: white;
 }
