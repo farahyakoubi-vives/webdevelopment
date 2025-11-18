@@ -1,0 +1,26 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, Verdana, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+    background-color: #FFE4E1;
+}
+
+header{
+    background-color: #FFD1DC;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1{
+    margin: 0 0 5px 0;
+    font-size: 2.5rem;
+    color: salmon;
+}
+
+header h2{
+    margin-top: 0;
+    color: salmon;
+}
+
