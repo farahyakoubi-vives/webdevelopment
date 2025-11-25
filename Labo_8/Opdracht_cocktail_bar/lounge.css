@@ -1,0 +1,112 @@
+/*algemeen*/
+body {
+    font-family: Verdana, Helvetica, Varial;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+#wrapper{
+    width: 95%;
+    margin: auto;
+}
+
+header img{
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+#columns{
+    display: flex;
+    gap: 20px;
+}
+
+#content {
+    flex: 70;
+}
+/* weekly specials*/
+#elixirs{
+    flex: 30;
+    padding: 20px;
+    background-image: url("images/cocktail.gif");
+    background-size: auto;
+    background-repeat: repeat-x;
+    background-position: top center ;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* titels */
+h1, h2{
+    color:rgb(0,126,126);
+}
+
+h1{
+    font-size: 150%;
+}
+
+h2{
+    font-size: 130%;
+}
+
+
+#elixirs h1{
+    color: #a20055;
+    text-align: center;
+}
+
+#elixirs h2{
+    color: #b55a00;
+    margin-top: 10px;
+}
+
+#elixirs p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#elixirs a{
+    text-decoration: none;
+    color: black;
+    padding: 2px 4px;
+}
+
+#elixirs a:hover{
+    background: brown;
+    color: white;
+}
+
+
+/*class color*/
+.color{
+    margin: 30px;
+    padding: 20px;
+    background-color: #a7cece;
+    color: #444444;
+    border: 2px dotted white;
+
+    background-image: url("images/background.gif");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto;
+}
+
+
+/*cd en artist*/
+.cd{
+    font-style: italic;
+}
+
+.artist{
+    font-weight: bold;
+}
+
+/*footer*/
+footer{
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
