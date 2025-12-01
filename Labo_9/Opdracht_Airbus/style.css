@@ -1,0 +1,30 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+}
+
+header{
+    background-image: url("images/bgsky3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.top p{
+    font-weight: bold;
+    font-size: 300%;
+    font-style: italic;
+    text-align: center;
+    color: darkblue;
+}
+
+main {
+    width: 75%;
+    margin: 10px;
+}
+
+.copyright{
+    text-align: center;
+    background-color: white;
+    color: black;
+}
