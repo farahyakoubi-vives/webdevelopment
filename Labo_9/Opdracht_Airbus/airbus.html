@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="nl">
+<html lang="nl" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="UTF-8">
 	<title>Airbus Webpagina</title>
@@ -8,86 +8,90 @@
 
 <body>
 <header>
-	<div class="top"> <!-- top -->
+	<div class="top-section"> <!-- top -->
 		<p class="bovenste_titel"> AIRBUS - A380</p>
 		<p class="onderste_titel"> Het grootste passagiersvliegtuig ter wereld </p>
-		<img src="images/tekklein.png" alt="tekening van vliegtuig">
+		<img class="plane-img" src="images/tekklein.png" alt="tekening van vliegtuig">
     </div>
 </header>
-    <div> <!-- news -->
-		<h3>Eerste vlucht</h3>
+
+    <main class="page-wrapper">
+            <aside class="news">
+                <section class="news-block">
+		<h3 class="news-title"> Eerste vlucht</h3>
 		<p>Het toestel maakte zijn eerste trans-Atlantische vlucht met passagiers op 19 maart 2007 tussen
-			 Frankfurt am Main en New York.
-		</p>
-		<h3>Singapore</h3>
+			 Frankfurt am Main en New York.</p>
+            </section>
+
+		<section class="news-block">
+		<h3 class="news-title">Singapore</h3>
 		<p>De eerste vijf A380 toestellen werden aan Singapore Airlines geleverd. Nadat in Toulouse het eerste
 			 afgeleverde toestel op 15 oktober 2007 officieel aan Singapore Airlines overgedragen was, werd op 25
-			 oktober de eerste commerciële vlucht uitgevoerd.
-		</p>
-		<h3>Qantas</h3>
+            oktober de eerste commerciële vlucht uitgevoerd. </p>
+        </section>
+
+		<section class="news-block">
+		<h3 class="news-title">Qantas</h3>
 		<p>Bij een A380 van Qantas (QF32) deed zich kort na het opstijgen van de Luchthaven van Singapore een
 			 "uncontained engine failure" voor waarbij er delen van de motor afvielen. Brokstukken van de
-			 motorbehuizing vielen op het Indonesische eiland Batam. Er vielen geen gewonden.
-		</p>
-		<h3>Air France</h3>
+			 motorbehuizing vielen op het Indonesische eiland Batam. Er vielen geen gewonden.</p>
+        </section>
+         <section class="news-block">
+		<h3 class="news-title">Air France</h3>
 		<p>Een Airbus A380 van Air France raakte tijdens het taxiën naar de startbaan op John F. Kennedy
 			 International Airport met zijn vleugel de staart van een Bombardier CRJ700 van Comair.
 		</p>
-    </div>
+         </section>
+            </aside>
 	
-    <div class="main"> <!-- main -->
-	
-        <div class="logo"> <!-- logo -->
-			<img src="images/airbus_logo.jpg" alt="Het logo van airbus">
-        </div>
-		
-        <div class="introduction"> <!-- introduction -->
-			<p><b>De Airbus A380</b> is het grootste passagiersvliegtuig ter wereld. Het is
+    <section class="main"> <!-- main -->
+	<div class="intro">
+        <img class="logo" src="images/airbus_logo.jpg" alt="Het logo van airbus">
+
+			<p><strong class="blue-text">De Airbus A380</strong> is het grootste passagiersvliegtuig ter wereld. Het is
 			   een product van het Europese concern Airbus. Het widebody-vliegtuig beschikt over twee
 			   verdiepingen, waardoor het maximaal 853 passagiers kan herbergen. Bij een gemiddelde configuratie
 			   passen er 555 personen in.
+
 			   De eerste testvlucht werd gemaakt op 27 april 2005. Tweeënhalf jaar later, op 25 oktober 2007, 
 			   maakte de A380 haar eerste commerciële vlucht. In dienst van Singapore Airlines vloog de A380 van
-			   Singapore naar Sydney. <span>Dit was eveneens de eerste route waarop een lijndienst door het
+			   Singapore naar Sydney. <span class="blue-text">Dit was eveneens de eerste route waarop een lijndienst door het
 			   toestel werd onderhouden. </span> Anno april 2011 hebben vijf luchtvaartmaatschappijen 47
 			   vliegtuigen van dit type in dienst.
 			</p>
 		</div>
 		
-		<div> <!-- gallery -->
-			<div class="foto">
-			  <img src="images/A380Grond.JPG" alt="Foto vliegtuig op de grond">
-			</div>
-			<div class="foto">
-			  <img src="images/Britischairways.JPG" alt="British Airways">
-			</div>
-			<div class="foto">
-			  <img src="images/binnen3.jpg" alt="Interieur">
-			</div>
-			<div class="foto">
-			  <img src="images/cockpit.jpg" alt="Cockpit">
-			</div>
-			<div class="foto">
-			  <img src="images/indelucht.jpg" alt="In de lucht">
-			</div>
-			<div class="foto">
-			  <img src="images/pasagiers.jpg" alt="Pasagiers">
-			</div>
-			<div class="foto">
-			  <img src="images/binnen1.jpg" alt="Interieur">
-			</div>
-			<div class="foto">
-			  <img src="images/indelucht2.jpg" alt="In de lucht">
-			</div>
-			<div class="foto">
-			  <img src="images/abramovich.jpg" alt="Abramovich">
-			</div> 
-		</div>
-	</div>
-	
-    <div> <!-- bottom -->
-	
-		<div> <!-- block -->
+		<section class="photos">
+			  <figure class="photo"><img src="images/A380Grond.JPG" alt="Foto vliegtuig op de grond"></figure>
+
+            <figure class="photos"><img src="images/Britischairways.JPG" alt="British Airways"></figure>
+
+
+			  <figure class="photos"><img src="images/binnen3.jpg" alt="Interieur"></figure>
+
+
+			  <figure class="photos"><img src="images/cockpit.jpg" alt="Cockpit"></figure>
+
+
+			  <figure class="photos"><img src="images/indelucht.jpg" alt="In de lucht"></figure>
+
+
+			  <figure class="photos"><img src="images/pasagiers.jpg" alt="Pasagiers"></figure>
+
+
+			 <figure class="photos"><img src="images/binnen1.jpg" alt="Interieur"></figure>
+
+            <figure class="photos"><img src="images/indelucht2.jpg" alt="In de lucht"></figure>
+
+			  <figure class="photos"> <img src="images/abramovich.jpg" alt="Abramovich"> </figure>
+	</section>
+
+    </section>
+ </main>
+
+
+<footer class="bottom">   <!-- bottom -->
+	    <div class="bottom-block">   <!-- block -->
 			<ul>
 			  <li> Manchester </li>
 			  <li> Toulouse 
@@ -100,7 +104,7 @@
 			</ul>
 		</div>
 		
-		<div> <!-- block -->
+		<div class="bottom-block"> <!-- block -->
 			<ul>
 			  <li> Documentary </li>
 			  <li> Aircrafts 
@@ -112,10 +116,10 @@
 			   <li> A380 - 800 </li>
 			</ul>
 		</div>
-    </div>
+</footer>
 	
 	<div class="copyright"> <!-- copyright -->
-		<p>&lt; &copy; Airbus A380 &gt;</p>
+		<p>&lt &copy Airbus A380 &gt</p>
 	</div>
 	
 </body>

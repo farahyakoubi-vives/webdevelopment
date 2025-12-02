@@ -1,30 +1,137 @@
+* {box-sizing: border-box;}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     width: 95%;
+    margin: 0 auto;
 }
 
-header{
+.top-section{
+    height: 200px;
     background-image: url("images/bgsky3.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-
-}
-.top p{
-    font-weight: bold;
-    font-size: 300%;
-    font-style: italic;
+    background-position: center;
+    position: relative;
     text-align: center;
     color: darkblue;
 }
 
-main {
-    width: 75%;
-    margin: 10px;
+.bovenste_titel{
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 20px 0 0 0;
 }
 
-.copyright{
-    text-align: center;
-    background-color: white;
-    color: black;
+.onderste_titel{
+    font-size: 240%;
+    font-weight: bold;
+    margin: 5px 0;
 }
+
+.plane-img {
+    position: absolute;
+    right: 250px;
+    bottom: 60px;
+    z-index: 2;
+}
+
+
+    .page-wrapper{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .news{
+        width: 25%;
+        background-color: #dddddd;
+        border: 1px solid #999999;
+    }
+
+    .news-block{
+        padding: 10px;
+        color: #666666;
+        font-size: 90%;
+    }
+
+    .news-title{
+        background-color: blue;
+        color: white;
+        text-align: center;
+        font-size: 120%;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .main{
+        width: 75%;
+        margin-left: 10px;
+    }
+
+    .intro{
+        background-color: white;
+        color: black;
+        display: flex;
+        gap: 20px;
+        padding: 20px 30px 20px 20px;
+    }
+
+    .logo{
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    .blue-text{
+        color: blue;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .photos{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        background-color: #999999;
+
+    }
+
+    .photo{
+        width: 180px;
+        height: 180px;
+        background: white;
+        padding: 10px;
+        border: 1px dotted #ffffff;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+
+    .bottom{
+        background-color: #666666;
+        color: white;
+        padding: 20px 0 20px 120px;
+        display: flex;
+        gap: 80px;
+        line-height: 2em;
+        margin-top: 20px;
+    }
+
+    .bottom a:hover{
+        color: red;
+    }
+
+    .copyright{
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+        color: black; }
