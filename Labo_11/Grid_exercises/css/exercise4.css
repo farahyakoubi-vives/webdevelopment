@@ -65,7 +65,7 @@
         background: red; /*testen of de grid veranderd? */
 
     }
-    .block{
+    .container .block{
         grid-row: auto;
         grid-column: auto;
     }
