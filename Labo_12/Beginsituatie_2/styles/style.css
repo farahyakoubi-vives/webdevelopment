@@ -13,10 +13,17 @@ body{
     box-sizing: border-box;
 }
 
-
 nav{
     padding: 5px 2px;
-    background-color: white;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    color: #ddaa00;
+    text-decoration: none;
 }
 
 img{
@@ -32,74 +39,77 @@ header, footer{
 header h1{
     margin: 0;
     text-align: center;
+    color: white;
 }
 
-a{
-    color: #ddaa00;
-    text-decoration: none;
-}
-
-nav a {
-    margin: 0 5px;
-    border: 1px solid #ccc;
-    color: black;
-    background-color: white;
-}
 
 main{
     background-color: grey;
+    display: flex;
+    gap: 10px;
 }
 
 main div{
     background-color: white;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+nav a,
 main div a{
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     background-color: white;
-    color: black;
+    color: #ddaa00;
     text-align: center;
 }
 
 
 /*mobile first*/
-    nav{
+@media (max-width: 700px) {
+    /*body{*/
+    /*    background-color: blue; !*testen of het werkt*!*/
+    /*}*/
+    nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    main{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
 
-    main div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-@media (min-width: 701px) {
-    nav{
-
-        justify-content: center;
-    }
     main {
-        flex-direction: row;
-        gap: 10px;
-    }
-    main div{
-
         flex-direction: column;
-        align-items: center;
-        flex: 1;
+        /*    !*gap: 10px;*!*/
+        }
+
+        main div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
 
-    footer{
-        text-align: center;
+    /*desktop*/
+    @media (min-width: 701px) {
+        /*body{*/
+        /*    background-color: red; !*testen of het werkt!*/
+        /*}*/
+        nav {
+            justify-content: space-between;
+        }
+
+        main {
+            flex-direction: row;
+
+        }
+
+        main div {
+            flex: 1;
+        }
+
+        footer {
+            text-align: center;
+        }
     }
 
-}
