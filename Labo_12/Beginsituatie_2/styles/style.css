@@ -3,8 +3,103 @@ html {
     font-family: helvetica;
 }
 
+body{
+    margin: 5px;
+    font-size: 1em;
+}
+
 * {
     padding: 10px;
+    box-sizing: border-box;
 }
 
 
+nav{
+    padding: 5px 2px;
+    background-color: white;
+}
+
+img{
+    padding: 0;
+    max-width: 100%;
+    display: block;
+}
+
+header, footer{
+    background: #ddaa00;
+}
+
+header h1{
+    margin: 0;
+    text-align: center;
+}
+
+a{
+    color: #ddaa00;
+    text-decoration: none;
+}
+
+nav a {
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    color: black;
+    background-color: white;
+}
+
+main{
+    background-color: grey;
+}
+
+main div{
+    background-color: white;
+}
+
+main div a{
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+
+/*mobile first*/
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+@media (min-width: 701px) {
+    nav{
+
+        justify-content: center;
+    }
+    main {
+        flex-direction: row;
+        gap: 10px;
+    }
+    main div{
+
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+}

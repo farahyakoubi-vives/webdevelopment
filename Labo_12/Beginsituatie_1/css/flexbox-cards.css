@@ -65,12 +65,15 @@ a {
 .container {
 /* flex-eigenschappen */
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .card {
     /* flex-eigenschappen */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 
 
 
