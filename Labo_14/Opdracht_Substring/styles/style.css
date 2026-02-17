@@ -1,0 +1,37 @@
+label, input, span {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+
+input[type="text"] {
+    width: 120px;
+    padding: 3px 6px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 3px 6px;
+}
+
+
+button {
+    background-color: #cbd7e1;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+
+#outputContainer {
+    display: inline-block;
+    margin-left: 6px;
+    font-weight: bold;
+    min-width: 40px;
+}
