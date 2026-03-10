@@ -1,0 +1,13 @@
+.slider{
+    width: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.colorDemo{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
