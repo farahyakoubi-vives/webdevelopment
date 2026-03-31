@@ -1,0 +1,10 @@
+{
+  "naam": "John",
+  "familienaam": "Doe",
+  "studie" : "Toegepaste Informatica",
+  "geboortedatum" : {
+    "jaar" : "1953",
+    "maand" : "februari",
+    "dag" : "25"
+  }
+}
