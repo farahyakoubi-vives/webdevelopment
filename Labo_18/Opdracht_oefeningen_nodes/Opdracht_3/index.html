@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <style>
+        /* Geeft de div een zichtbare rand zodat je duidelijk ziet
+           waar nieuwe p-elementen worden toegevoegd */
+        #myDIV {
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<p>
+    Klik op een knop om een p-element aan te maken.
+</p>
+<!-- De div waar JS nieuwe p-elementen aan toevoegt -->
+<div id="myDIV">
+    Dit is een div-element
+</div>
+<!-- onclick="voegPToe()" roept de functie in script.js aan bij elke klik -->
+<button onclick="voegPToe()">Voeg p-element toe</button>
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/* Elk element met class "listitem" krijgt rode tekst.
+   Deze class wordt via JS toegevoegd aan de li-elementen. */
+.listitem {
+    color: red;
+}

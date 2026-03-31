@@ -1,0 +1,82 @@
+/* De colorpicker component: alles naast elkaar in een rij */
+#picker {
+    display: flex;          /* zet kinderen naast elkaar */
+    align-items: center;    /* lijn alles verticaal in het midden uit */
+    gap: 20px;              /* ruimte tussen de elementen */
+    margin-bottom: 30px;    /* ruimte onder de picker */
+}
+
+/* Het gekleurde voorbeeldvakje */
+#colorBox {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(0, 0, 0); /* beginwaarde: zwart, wordt via JS aangepast */
+    border: 1px solid black;
+    border-radius: 12px;    /* licht afgeronde hoeken */
+    flex-shrink: 0;         /* voorkomt dat dit vakje kleiner wordt als de pagina smal is */
+}
+
+/* De drie sliders onder elkaar */
+#sliders {
+    display: flex;
+    flex-direction: column; /* kinderen onder elkaar in plaats van naast elkaar */
+    gap: 8px;
+}
+
+/* Zorgt dat elk label even breed is zodat de sliders netjes uitlijnen */
+.slider-row label {
+    display: inline-block;
+    width: 50px;
+}
+
+/* Breedte van alle range-sliders */
+input[type="range"] {
+    width: 250px;
+}
+
+/* Opmaak van de Save-knop */
+#saveBtn {
+    padding: 10px 16px;
+    font-size: 1rem;
+    cursor: pointer;        /* muiscursor verandert in handje bij hover */
+}
+
+/* Container voor alle opgeslagen swatches */
+#swatches {
+    display: flex;
+    flex-wrap: wrap;        /* als er te veel swatches zijn, gaan ze naar de volgende rij */
+    gap: 16px;
+}
+
+/* De wrapper rond elke swatch + delete-knop */
+.swatch-wrapper {
+    position: relative;     /* nodig zodat de delete-knop absoluut gepositioneerd kan worden t.o.v. deze wrapper */
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+/* Het gekleurde rechthoekje zelf */
+.swatch {
+    width: 100%;            /* vult de volledige wrapper */
+    height: 100%;
+    border: 1px solid black;
+    /* geen border-radius: de swatch is bewust een scherpe rechthoek */
+}
+
+/* De X-knop in de rechterbovenhoek van de swatch */
+.delete-btn {
+    position: absolute;     /* gepositioneerd t.o.v. de .swatch-wrapper */
+    top: 0;                 /* helemaal bovenaan */
+    right: 0;               /* helemaal rechts */
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 0.75rem;
+    line-height: 22px;      /* tekst verticaal centreren binnen de knop */
+    text-align: center;
+    padding: 0;
+}
+

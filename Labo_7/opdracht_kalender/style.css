@@ -1,0 +1,45 @@
+table.kalender {
+    border-collapse: collapse;
+    width: 220px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+th.maand {
+    background: rgb(170,170,200);
+    padding: 6px;
+}
+
+
+thead .dagen th {
+    background: rgb(35,37,70);
+    color: rgb(200,190,240);
+    padding: 4px;
+}
+
+td {
+    padding: 4px;
+    border: 1px solid #999;
+}
+
+td.grijs {
+    color: #777;
+    background: #eee;
+}
+
+tbody tr td:first-child,
+tbody tr td:last-child {
+    background: rgb(255,220,220);
+}
+
+td.feestdag {
+    background: rgb(250,120,120);
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:last-child td:nth-child(5) {
+    background: rgb(250,120,120);
+    color: white;
+    font-weight: bold;
+}

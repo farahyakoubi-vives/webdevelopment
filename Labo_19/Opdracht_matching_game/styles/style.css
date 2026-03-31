@@ -1,0 +1,31 @@
+#speelbord {
+    /* een grid gemaakt waar de inhoud automatisch in rijen
+en kolommen worden geplaatst */
+    display: grid;
+    /*verdeeld grid in 3 gelijke kolommen,
+    elke kolom krijgt evenveel ruimte*/
+    grid-template-columns: repeat(3, 1fr);
+    /* 10px ruimte tussen de vakjes */
+    gap: 10px;
+    width: 500px;
+}
+
+#speelbord img {
+    /*elke afbeelding vult de volledige breedte van zijn kolom*/
+    width: 100%;
+    height: 150px;
+    /*de afbeelding past zich aan zodat hij volledig zichtbaar blijft*/
+    object-fit: contain;
+    /*cursor een handje zoals als je op een link klikt,
+    duidelijk bij het aanklikken van de kaarten */
+    cursor: pointer;
+}
+/* kaart heeft twee staten open en dicht*/
+/* dicht ligt omgekeerd, je kan er op klikken*/
+#speelbord img.dicht {
+    cursor: pointer;
+}
+/* kaart is al omgedraaid, niet meer klikbaar (gewone cursor) */
+#speelbord img.open {
+    cursor: default;
+}

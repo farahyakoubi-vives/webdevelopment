@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lorem{
+    display: flex;
+    margin: 10px;
+}
+
+.ipsum{
+    display: flex;
+    margin: 10px;
+}
+section{
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+

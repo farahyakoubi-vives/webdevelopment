@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Koppeling naar CSS voor de gekleurde gebieden -->
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <!-- Een lijst met 3 items. Elk item bevat ook een link (a).
+         Op ul, li én a worden click-listeners gekoppeld in JS.
+         Doel: aantonen hoe event bubbling werkt:
+         klik op 'delete' (a) → event borrelt omhoog naar li → dan naar ul -->
+	<ul>
+		<li>test1<a href="#">delete</a></li>
+		<li>test2<a href="#">delete</a></li>
+		<li>test3<a href="#">delete</a></li>
+	</ul>
+	Klik in elk van de drie gekleurde gebieden en kijk telkens naar de output op de console.
+    <!-- Script onderaan zodat de HTML al geladen is als JS start -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>

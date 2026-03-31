@@ -1,0 +1,20 @@
+/*oorspronkelijke code
+.menuitem{
+    display: inline-block;
+    width: 150px;
+}
+
+.menuitem > a {
+    color: red;
+} */
+
+/*hergeschreven code: */
+
+.menu li{
+    display: inline-block;
+    width: 150px;
+}
+
+.menu li> a{
+    color: red;
+}

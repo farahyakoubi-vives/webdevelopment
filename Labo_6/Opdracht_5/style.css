@@ -1,0 +1,28 @@
+/* algemene opmaak*/
+body{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 20px;
+}
+
+/*links*/
+a.with-icon{
+    position: relative;
+    padding-left: 24px;
+    background-image: url("https://img.icons8.com/?size=100&id=VwvN00C9ez6q&format=png&color=000000");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    color: #2B2D42;
+    text-decoration: none;
+}
+
+a.with-icon:hover {
+    border: 2px solid darkred;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: #fdd;
+
+}

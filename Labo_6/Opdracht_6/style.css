@@ -1,0 +1,35 @@
+/*algemene opmaak*/
+body{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 20px;
+}
+
+/*head*/
+h1{
+    font-variant: small-caps;
+    color: #2b2d42;
+}
+
+/*checklist*/
+ul.checklist{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*unchecked items*/
+ul.checklist li {
+    background-image: url('https://img.icons8.com/?size=100&id=53241&format=png&color=000000');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin-bottom: 5px;
+}
+
+/*checked items*/
+ul.checklist li.checked{
+    background-image: url('https://img.icons8.com/?size=100&id=25534&format=png&color=000000');
+}

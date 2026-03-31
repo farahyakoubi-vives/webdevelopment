@@ -1,0 +1,19 @@
+/* Buitenste gebied (lichtblauw) = de ul
+   padding zorgt voor een zichtbaar klikoppervlak rondom de li-items */
+ul {
+    padding:20px;
+    background-color:lightblue;
+}
+
+/* Middelste gebied (lichtkoraalrood) = elk li-item */
+li {
+    padding:20px;
+    background-color:lightcoral;
+}
+
+/* Binnenste gebied (lichtgrijs) = de delete-link
+   Hierdoor zie je duidelijk drie aparte klikzones */
+a {
+    padding:20px;
+    background-color:lightgrey;
+}
