@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Colorpicker Uitbreiding</title>
+    <!-- Koppeling naar het CSS-bestand voor de opmaak -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Colorpicker Uitbreiding</h1>
+
+    <!-- De hele colorpicker zit in één div zodat we alles naast elkaar kunnen zetten met flexbox -->
+    <div id="picker">
+
+        <!-- Dit vakje toont de huidige kleur. De kleur wordt via JS ingesteld -->
+        <div id="colorBox"></div>
+
+        <!-- Groepering van de drie sliders -->
+        <div id="sliders">
+
+            <!-- Elke slider-row bevat een label met de huidige waarde en een slider -->
+
+            <!-- Rood: waarde loopt van 0 tot 255 -->
+            <div class="slider-row">
+                <!-- De span met id="rValue" wordt via JS bijgewerkt met de huidige waarde -->
+                <label>R: <span id="rValue">0</span></label>
+                <input type="range" id="rSlider" min="0" max="255" value="0">
+            </div>
+
+            <!-- Groen: zelfde opbouw als rood -->
+            <div class="slider-row">
+                <label>G: <span id="gValue">0</span></label>
+                <input type="range" id="gSlider" min="0" max="255" value="0">
+            </div>
+
+            <!-- Blauw: zelfde opbouw als rood -->
+            <div class="slider-row">
+                <label>B: <span id="bValue">0</span></label>
+                <input type="range" id="bSlider" min="0" max="255" value="0">
+            </div>
+        </div>
+
+        <!-- Knop om de huidige kleur op te slaan als swatch -->
+        <button id="saveBtn">Save</button>
+    </div>
+
+    <!-- Hier worden de opgeslagen swatches toegevoegd via JavaScript. Begint leeg. -->
+    <div id="swatches"></div>
+
+    <!-- Script altijd onderaan zodat de HTML al geladen is als JS start -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+
