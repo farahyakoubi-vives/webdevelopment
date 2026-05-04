@@ -12,28 +12,38 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
+<!-- container margin top ruimte boven met 5 units -->
+
 <div class="container mt-5">
 
     <!-- BOVENSTE DEEL-->
     <h1>My Internet Start Page</h1>
     <p class="text-muted">Zoekopracht</p>
-
+<!-- container met margin bottom ruimte onder -->
     <div class="mb-3">
+        <!-- commandinput gekopeld met id commandinput, class=form-label bootstrap styling -->
         <label for="commandInput" class="form-label">Enter commando</label>
         <small class="form-text text-muted">Start your commando with '/[character] [zoekopracht]'</small>
-        <input
+        <input <!-- teksr waar gebruiker in typt -->
                 type="text"
                 id="commandInput"
-                class="form-control"
-                placeholder="Enter commando"
+                class="form-control" <!-- bootstrap styling een mooi vak -->
+                placeholder="Enter commando" <!-- grijs hinttekst in vak -->
         >
     </div>
 
+    <!-- klikbare knop -->
+    <!-- btn = bootstrap btn styling, btn-succes, groene kleur, btn-lg large, w-100 width 100, mb-5 margin bottom ruimte onder -->
+    <!-- onclick exezcutecommand wanneer je klikt voert die executecommand uit -->
     <button class="btn btn-success btn-lg w-100 mb-5" onclick="executeCommand()">GO!</button>
 
     <!-- ONDERSTE DEEL-->
     <h2>History</h2>
     <div class="row" id="historyContainer">
+<!-- JS gebruikt historycontainer om kaarten toe te voegen : container.innerHTML += cardHtml -->
+<!-- alle kaarten te wissen container.innerHtml = "" -->
+        <!-- wordt gevuld met history items -->
 
     </div>
 </div>
