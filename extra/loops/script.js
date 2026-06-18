@@ -9,3 +9,8 @@ while (i < 5){
     console.log(i);
     i++;
 }
+
+
+const numbers = [89, 19, 21, 4];
+numbers.sort((a,b) => a - b);
+console.log(numbers);
