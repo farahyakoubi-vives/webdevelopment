@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>TeamQuiz Scorebord</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+<div class="scorebord">
+    <h1>TeamQuiz Scorebord</h1>
+
+    <label for="team-select">Team</label>
+    <select id="team-select">
+        <option value="Rood">Rood</option>
+        <option value="Blauw">Blauw</option>
+        <option value="Groen">Groen</option>
+        <option value="Geel">Geel</option>
+    </select>
+
+    <label for="punten-input">Punten</label>
+    <input type="number" id="punten-input" placeholder="bv. 5">
+    <button id="punten-toevoegen">Voeg punten toe</button>
+    <p id="foutmelding"></p>
+
+    <h2>Totalen</h2>
+    <ul id="totalen-lijst"></ul>
+
+    <h2>Geschiedenis</h2>
+    <ul id="geschiedenis-lijst"></ul>
+
+    <button id="reset-knop">Reset scorebord</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
