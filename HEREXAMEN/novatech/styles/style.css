@@ -97,7 +97,7 @@ ul#partners{
 ul#statistieken {
     display: flex;
     justify-content: center ;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 20px;
 }
@@ -127,7 +127,7 @@ ul#statistieken li {
     display: grid;
     text-align: center;
 }
-ul#testimonials-grid li{
+ul#testimonials-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 48px;
@@ -174,4 +174,28 @@ ul#partners li{
     border-radius: 12px;
     padding: 24px;
     background-color: var(--surface);
+}
+
+#hamburger{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#hamburger span{
+    width: 24px;
+    height: 3px;
+    background-color: var(--text);
+    border-radius: 2px;
+}
+
+
+@media (max-width: 860px) {
+    nav#menu ul {display: none;}
+    nav#menu ul.open{display: flex}
+
 }
